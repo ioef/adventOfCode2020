@@ -1,7 +1,6 @@
-# adventOfCode2020
+# Advent of Code Calendar - 2020 -
 
-Hello all!
 
+Hello friend.
 This is my 2020 Advent of Code Calendar!!!
-
-Stay Healthy and Stay safe and let's get rid of this strange and unhappy year with some python code!!!
+Stay Healthy and safe. Together let's get rid of this strange and unhappy year with some python code!!!
