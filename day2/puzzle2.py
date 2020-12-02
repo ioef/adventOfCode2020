@@ -10,6 +10,9 @@ with open('input','r') as f:
 passwordFile = passwordFile[:-1]
 
 def findAll(s, ch):
+    #for i in enumerate(s):
+    #    if i[1] == ch:
+    #        return i
     return [i for i, ltr in enumerate(s) if ltr == ch]
 
 def validate_password(char, policy, text):
