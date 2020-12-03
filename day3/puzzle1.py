@@ -15,13 +15,9 @@ treeCounter = 0
 yAxisCounter = 0
 
 numberOfColumns = len(roadMap[0])
-numberofRows= len(roadMap)
-x = 1
-yAxisCounter = 2
-for i in range(len(roadMap)):
-    if roadMap[yAxisCounter][x] == "#":
+for i in range(0, len(roadMap)):
+    if roadMap[i][yAxisCounter] == "#":
            treeCounter += 1
-    yAxisCounter = (yAxisCounter + 3)%numberofRows
-    x = (x + 1)%numberOfColumns
+    yAxisCounter = (yAxisCounter + 3)%numberOfColumns
 
 print("Encountered number of %s trees" %treeCounter)
