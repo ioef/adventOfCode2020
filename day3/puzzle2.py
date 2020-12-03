@@ -23,10 +23,9 @@ def treesCounter(roadMap, movement):
 
     xCounterOffset = movements[movement][0]
     yCounterOffset = movements[movement][1]
-    while xCounter < len(roadMap):
+    for xCounter in range(0,len(roadMap),xCounterOffset):
         if roadMap[xCounter][yCounter] == "#":
             treeCounter += 1
-        xCounter = (xCounter + xCounterOffset)
         yCounter = (yCounter + yCounterOffset)%numberOfColumns
     return treeCounter
 
