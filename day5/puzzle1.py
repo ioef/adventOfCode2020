@@ -26,7 +26,6 @@ for boardingPass in boardingPasses:
             colBits.append('1')
     col = int(''.join(colBits), 2)
 
-    print(row, col)
     listofIds.append(row *8 + col)
 
 print(max(listofIds))
