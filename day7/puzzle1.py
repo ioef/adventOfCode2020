@@ -10,7 +10,6 @@ def number_of_bags(color):
             not line.startswith(color)]
 
     allColors = []
-
     if len(lines) == 0:
         return []
     else:
