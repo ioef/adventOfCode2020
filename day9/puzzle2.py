@@ -14,5 +14,5 @@ for i in range(len(sequence)):
                 minimum = finalList[0]
                 maximum = finalList[-1]
                 finalsum = minimum + maximum
-                print("List :%s",finalList)
+                print("List :%s"%finalList)
                 print("Sum of Min + Max:%s"%finalsum)
