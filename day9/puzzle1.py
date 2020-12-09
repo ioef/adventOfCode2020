@@ -22,6 +22,7 @@ while i < len(sequence):
     if i+26 <= len(sequence):
          current_number =  int(sequence[i+25])
     if calculate_sums(curentList, current_number):
+        print("Number:%s"%current_number)
         print("Match")
     else:
         print("Number:%s"%current_number)
