@@ -7,11 +7,11 @@ with open("input", "r") as fileIn:
 jolts.sort()
 
 jolts = [0] + jolts
-jolts.append(jolts[-1]+3)
+jolts.append(max(jolts)*3)
 
 count_diff_of_ones = 0
 count_diff_of_threes = 0
-for i in range(len(jolts)-1):
+for i in range(0, len(jolts)-1):
         diff = jolts[i+1] - jolts[i]
 
         if diff == 1:
