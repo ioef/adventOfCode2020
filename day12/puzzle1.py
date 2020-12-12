@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-#Today's puzzle resembles the Game of Life
 
 with open("input", "r") as fileIn:
    grid = [line.strip() for line in fileIn.readlines()]
