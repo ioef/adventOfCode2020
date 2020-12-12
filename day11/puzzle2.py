@@ -51,5 +51,4 @@ for generations in range(100):
             rowList += character
         nextLine.append(rowList)
     layout = nextLine
-
 print(totalOccupants(layout))
