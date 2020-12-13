@@ -12,7 +12,7 @@ buses = [line for line in schedules[1].split(',')]
 
 ids = []
 
-def mod_inverse(a,n):
+def inverse_modulo(a,n):
     # find some x such that (a*x) % n == 1
     a = a % n
     if n == 1:
@@ -42,7 +42,7 @@ def get_earliest_time():
     for i,k in ids:
         partialProduct = fullProduct // k
 
-        inverse = mod_inverse(partialProduct,k)
+        inverse = inverse_modulo(partialProduct,k)
 
         term = inverse * partialProduct * i
         total += term
