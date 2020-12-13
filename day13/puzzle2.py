@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 
-
+#Solution obtained from here 
+#https://github.com/dylan-codesYT/AdventOfCode2020/blob/master/day13.py
+#Credits go to Dylan codes
 
 with open("input", "r") as fileIn:
    schedules = [line.strip() for line in fileIn.readlines()]
 
 
 buses = [line for line in schedules[1].split(',')]
-buses = [int(valid) for valid in buses if valid !='x']
 
 ids = []
 
@@ -31,7 +32,7 @@ def get_earliest_time():
     fullProduct = 1
     for i in range(len(buses)):
         item = buses[i]
-        if item != 'x':
+        if item !='x':
             k = int(item)
             i = i % k
             ids.append(((k-i)%k,k))
@@ -42,7 +43,6 @@ def get_earliest_time():
         partialProduct = fullProduct // k
 
         inverse = mod_inverse(partialProduct,k)
-        assert (inverse * partialProduct) % k == 1
 
         term = inverse * partialProduct * i
         total += term
