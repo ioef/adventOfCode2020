@@ -9,7 +9,6 @@ with open("input", "r") as fileIn:
 
 
 buses = [line for line in schedules[1].split(',')]
-
 ids = []
 
 def inverse_modulo(a,n):
