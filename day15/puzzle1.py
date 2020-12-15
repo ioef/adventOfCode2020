@@ -9,7 +9,7 @@ def van_eck_sequence(end):
     #number location
     location = {number:idx for idx,number in enumerate(seen)}
     while n < end-1:
-        val = seen[n]
+        val = seen[-1]
         if val in location.keys():
             position = location[val]
             newval = n - position
