@@ -39,6 +39,7 @@ for line in lines:
         value = int(value)
         mem_location = cmd[4:-1]
         binary_value = convert_dec_to_bin(value)
+        #use padding to 36 bits
         while len(binary_value) < 36:
             binary_value = '0' + binary_value
         binary_value = list(binary_value)
