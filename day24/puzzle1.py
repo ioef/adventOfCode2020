@@ -6,7 +6,6 @@ with open("input", "r") as fileIn:
 tileSet = set()
 for line in lines:
     x,y,z = 0,0,0
-    i = 0
     while line:
         if line.startswith('e'):
             x += 1
