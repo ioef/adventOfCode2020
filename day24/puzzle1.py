@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import itertools
 
 with open("input", "r") as fileIn:
     lines = [line.strip() for line in fileIn.readlines()]
